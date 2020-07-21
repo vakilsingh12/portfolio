@@ -1,6 +1,6 @@
 document.getElementById("myForm").onsubmit =(e)=>{
   e.preventDefault();
-    const url = "http://localhost:5000/sent";
+    const url = "/sent";
     var data = new URLSearchParams();
      for(const pair of new FormData(e.target)){
         // console.log(pair)
