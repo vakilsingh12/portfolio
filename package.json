@@ -1,12 +1,18 @@
 {
-  "name": "cse",
+  "name": "Wish list",
   "version": "1.0.0",
-  "description": "simple node example",
-  "main": "index.js",
+  "description": "awesome app",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index"
+    "start": "node app.js"
   },
-  "author": "vakil",
-  "license": "ISC"
+  "author": "Vakil",
+  "license": "ISC",
+  "dependencies": {
+    "body": "^5.1.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.25",
+    "parser": "^0.1.4"
+  }
 }
