@@ -1,13 +1,13 @@
 const express=require('express');
+const bodyParser=require('body-parser')
 const app=express();
-const port=process.env.PORT || 5000
-const bodyParser=require('body-parser');
-app.use(express.static('public'));
-require('./models/wish');
-app.use(bodyParser.urlencoded({extended:false}))
-app.use(bodyParser.json())
-require('./Route')(app);
+const path=require('path');
+var insertModel=require('./modles/insert');
+app.use(bodyParser.urlencoded({extended: false }));
+app.use(bodyParser.json());
 app.set('view engine','ejs');
-app.listen(port,()=>{
-  console.log("server is running.."+port)
-})
+app.use(express.static(path.join(__dirname, 'public')));
+const indexRouter=require('./routes/index');
+app.use('/',indexRouter);
+
+app.listen(4000);

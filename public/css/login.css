@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+.nav-item a{
+  float: right;
+  margin:10px 20px;
+  color: crimson;
+}
+.form a{
+  cursor: pointer;
+  color: crimson;
+}
+.alert{
+  max-width: 550px;
+  margin: 40px auto;
+  z-index: 34;
+}
+.form{
+  max-width: 550px;
+  margin: 80px auto;
+  font-family:'Ubuntu', sans-serif; 
+  padding: 45px 50px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 5px crimson;
+}
+.form .title{
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+.form .row label{
+  color: #000;
+}
+.form button{
+  background: none;
+  color: #000;
+  border: 1px solid crimson;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.form button:hover{
+  background: crimson;
+  color: #ffffff;
+}
+.form .input-field input[type=email]:focus {
+  border-bottom: 1px solid crimson !important;
+  box-shadow: 0 1px 0 0 crimson !important;
+}
+
+.input-field input[type=email]:focus + label {
+  color: crimson !important;
+}
+.input-field input[type=password]:focus + label {
+  color: crimson !important;
+}
+.form .input-field input[type=password]:focus {
+  border-bottom: 1px solid crimson !important;
+  box-shadow: 0 1px 0 0 crimson !important;
+}
+
+.form .input-field input[type=text]:focus {
+  border-bottom: 1px solid crimson !important;
+  box-shadow: 0 1px 0 0 crimson !important;
+}
+
+.input-field input[type=text]:focus + label {
+  color: crimson !important;
+}
+/* insert data style */
+.common{
+  background: none !important;
+  border-radius: 3px !important;
+  color: #000 !important;
+  border: 1px solid crimson !important;
+  transition: all 0.3 s ease !important;
+}
+.common:hover{
+  background: crimson !important;
+  color: #fff !important;
+}
+
+@media (max-width:570px){
+    .form{
+      margin: 80px 18px;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <title><%= title %></title>
+</head>
+<body>
+  <% if(msg!=0){ %>
+  <div class="alert">
+    <h1><script>alert('<%= msg %>')</script></h1>
+  </div>
+  <% } %>
+  <div class="scroll-up-btn">
+    <i class="fa fa-angle-up"></i>
+  </div>
+  <!-- Navbar section start -->
+  <%- include("./navbar.ejs"); -%>
+
+  <!-- Home section start -->
+  <%- include("./Home.ejs"); -%>
+
+  <!-- About Section start -->
+  <%- include("./about.ejs"); -%>
+
+  <!-- Service section start -->
+  <%- include("./services.ejs"); -%>
+
+  <!-- Skills Section start -->
+  <%- include("./skills.ejs"); -%>
+
+  <!-- Team section start  -->
+  <%- include("./teams.ejs"); -%>
+
+  <!-- Contact section start -->
+  <%- include("./contact.ejs"); -%>
+
+  <!-- Footer section start -->
+  <%- include("./footer.ejs"); -%>
+<script src="/javascript/script.js"></script>
+</body>
+</html>

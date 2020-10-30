@@ -1,35 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-</head>
-<body>
-  <%- include('partial/nav'); %>
+<section class="home" id="home">
+  <div class="max-width">
+    <div class="home-content">
+      <div class="text-1">Hello, My Name is</div>
+      <% user.forEach((row)=>{ %>
+      <div class="text-2"><%= row.fname %></div>
+      <% }) %>
   
-  <h1>Hello  Vakil Singh</h1>
-  <!-- <h2>
-    <%= data.name %>
-    <%= data.status %>
-  </h2> -->
-  <form id="myForm">
-    <input type="text" name="item">
-    <button type="submit" class="waves-effect waves-light btn">Add</button>
-  </form>
-  <ul>
-    <% data.forEach(item=>{ %>
-     <li onclick="deleteme(this)"> <%= item.wish %></li>
-    <% }) %>
-  </ul>
-  <!-- <ul>
-    <li><%= data[0] %></li>
-    <li><%= data[1] %></li>
-    <li><%= data[2] %></li>
-  </ul> -->
- <script src="/script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</body>
-</html>
+      <div class="text-3">And I'm a <span class="typing"></span></div>
+      <a href="#">Hire Me</a>
+    </div>
+  </div>
+</section>

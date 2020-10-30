@@ -1,5 +1,5 @@
 {
-  "name": "Wish list",
+  "name": "wishlist",
   "version": "1.0.0",
   "description": "awesome app",
   "main": "app.js",
@@ -9,10 +9,26 @@
   "author": "Vakil",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body": "^5.1.0",
-    "ejs": "^3.1.3",
+    "body-parser": "^1.19.0",
+    "crypto": "^1.0.1",
+    "ejs": "^3.1.5",
     "express": "^4.17.1",
-    "mongoose": "^5.9.25",
-    "parser": "^0.1.4"
+    "express-session": "^1.17.1",
+    "express-validator": "^6.6.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.2",
+    "multer": "^1.4.2",
+    "mysql": "^2.18.1",
+    "node-localstorage": "^2.1.6",
+    "nodemailer": "^6.4.11",
+    "parser": "^0.1.4",
+    "pug": "^3.0.0",
+    "superhero": "^2.0.0-beta.98",
+    "superheroes": "^3.0.0",
+    "twig": "^1.15.2",
+    "upper-case": "^2.0.1",
+    "uppercase": "^2.0.0-beta.16"
   }
 }
