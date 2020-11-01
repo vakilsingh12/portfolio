@@ -1,9 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
-
-
-/* font-family: 'Poppins', sans-serif;
-font-family: 'Ubuntu', sans-serif; */
-
 *{
   margin: 0;
   padding: 0;
@@ -91,7 +86,9 @@ transition: all 0.5s ease;
 .home{
   display: flex;
   color: #000;
-  background: #fff;
+  background:url('/image/vakil1.jpg') no-repeat;
+  background-position: right;
+  margin-right: 60px;
   height: 90vh;
   min-height: 500px;
   font-family:'Ubuntu', sans-serif;
@@ -137,7 +134,7 @@ transition: all 0.5s ease;
   cursor: pointer;
 }
 /* About styling */
-.about,.services,.skills,.teams .contact .certificate footer{
+.about,.services,.project,.skills,.teams .contact .certificate footer{
   font-family: 'Poppins', sans-serif;
   padding-top: 80px;
 }
@@ -177,6 +174,7 @@ section .title::after{
 }
 .about .about-content,
 .skills .skills-content,
+.project .project-content,
 .contact .contact-content
 {
   display: flex;
@@ -562,11 +560,43 @@ footer span a:hover{
   display:flex;
   flex-wrap: wrap;
 }
-
-
-
-
-
+.certificate .certificate-content .row img{
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.certificate .certificate-content .row img:hover{
+  transform: scale(1.2);
+}
+/* project style */
+.project .project-content .row{
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width:100%;
+  justify-content: space-between;
+}
+.project .project-content .row .column{
+  flex-basis: 30%;
+}
+.project .project-content .row .column a{
+  display:inline-block;
+  background-color: crimson;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 15px 20px;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.project .project-content .row .column a:hover{
+  color: crimson;
+  background:none;
+}
 
 
 
@@ -594,6 +624,13 @@ footer span a:hover{
   }
 }
 @media (max-width:1000px){
+  .project .project-content .row{
+    display: flex;
+    flex-direction: column;
+  }
+  .project .project-content .row .column a{
+    width:300px;
+  }
   .certificate .certificate-content .row{
     display:flex;
     flex-wrap: wrap;
@@ -690,11 +727,15 @@ footer span a:hover{
   .certificate .certificate-content .column img{
     max-width: 300px;
   }
+  
 }
 
 @media (max-width:690px){
   .max-width{
     padding: 0 25px;
+  }
+  .home{
+    background: none;
   }
   .home .home-content .text-2{
     font-size: 60px;
