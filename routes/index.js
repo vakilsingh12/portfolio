@@ -62,24 +62,6 @@ router.post('/',checkEmail,(req,res,next)=>{
     }) 
    });
   });
-router.get('/certificate',(req,res,next)=>{
-  insertModel.find((err,data)=>{
-    res.render('certificate',{title:"Vakil Singh",msg:"",user:data});
-  })
-  
-});
-router.post('/certificate',checkEmail,(req,res,next)=>{
-  const {name,email,subject,project}=req.body;
-   var conDetail=new conModel({
-     name,email,subject,project
-   });
-   conDetail.save((err,data)=>{
-     if(err) throw err;
-     insertModel.find((err,data)=>{
-      res.render('certificate',{title:"Vakil Singh",msg:"Your Record Saved Successfully",user:data});
-    })
-   });
-  });
 
 // Login Router
 
