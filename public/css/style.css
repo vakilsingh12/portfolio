@@ -60,6 +60,10 @@ transition: all 0.5s ease;
 .navbar .logo a span{
   color: crimson;
 }
+.txt-name{
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .max-width{
   max-width: 1300px;
   padding: 0 80px;

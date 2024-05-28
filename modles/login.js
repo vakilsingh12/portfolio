@@ -1,5 +1,5 @@
 var mongoose=require('mongoose');
-mongoose.connect("mongodb+srv://singh:Singh@123@cluster0.7hhkx.mongodb.net/portfolio?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true,useCreateIndex:true});
+mongoose.connect("mongodb://127.0.0.1:27017",{useNewUrlParser:true,useUnifiedTopology:true,useCreateIndex:true});
 var conn=mongoose.connection;
 var loginSchema=new mongoose.Schema({
   email:{

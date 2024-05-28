@@ -1,29 +1,29 @@
-var mongoose=require('mongoose');
-mongoose.connect("mongodb+srv://singh:Singh@123@cluster0.7hhkx.mongodb.net/portfolio?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true,useCreateIndex:true});
-var conn=mongoose.connection;
-var conSchema=new mongoose.Schema({
-  name:{
-    type:String,
-    required:true,
+var mongoose = require('mongoose');
+mongoose.connect("mongodb://127.0.0.1:27017", { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true });
+var conSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true,
   },
-  email:{
-    type:String,
-    required:true,
-    index:{
-      unique:true
-    }},
-  subject:{
-    type:String,
-    required:true,
+  email: {
+    type: String,
+    required: true,
+    index: {
+      unique: true
+    }
   },
-  project:{
-    type:String,
-    required:true,
+  subject: {
+    type: String,
+    required: true,
   },
-  date:{
-    type:Date,
-    default:Date.now
+  project: {
+    type: String,
+    required: true,
+  },
+  date: {
+    type: Date,
+    default: Date.now
   }
 });
-var model=mongoose.model('contact',conSchema);
-module.exports=model;
+var model = mongoose.model('contact', conSchema);
+module.exports = model;
