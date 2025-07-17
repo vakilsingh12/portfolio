@@ -1,5 +1,5 @@
 var mongoose=require('mongoose');
-mongoose.connect("mongodb+srv://singh:Singh@123@cluster0.7hhkx.mongodb.net/portfolio?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true,useCreateIndex:true});
+mongoose.connect("mongodb+srv://namastedev:TGmSfquq9Qt89HoG@namstenode.9ido0mx.mongodb.net/portfolio?retryWrites=true&w=majority&appName=NamsteNode");
 var conn=mongoose.connection;
 var conSchema=new mongoose.Schema({
   name:{
