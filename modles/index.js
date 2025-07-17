@@ -1,5 +1,7 @@
-var mongoose = require('mongoose');
-mongoose.connect("mongodb+srv://namastedev:TGmSfquq9Qt89HoG@namstenode.9ido0mx.mongodb.net/portfolio?retryWrites=true&w=majority&appName=NamsteNode");
+var mongoose = require("mongoose");
+mongoose.connect(
+  "mongodb+srv://namastedev:TGmSfquq9Qt89HoG@namstenode.9ido0mx.mongodb.net/portfolio?retryWrites=true&w=majority&appName=NamsteNode"
+);
 var conSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -9,8 +11,8 @@ var conSchema = new mongoose.Schema({
     type: String,
     required: true,
     index: {
-      unique: true
-    }
+      unique: true,
+    },
   },
   subject: {
     type: String,
@@ -22,8 +24,8 @@ var conSchema = new mongoose.Schema({
   },
   date: {
     type: Date,
-    default: Date.now
-  }
+    default: Date.now,
+  },
 });
-var model = mongoose.model('contact', conSchema);
+var model = mongoose.model("contact", conSchema);
 module.exports = model;
