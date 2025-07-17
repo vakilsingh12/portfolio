@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-mongoose.connect("mongodb://127.0.0.1:27017", { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true });
+mongoose.connect("mongodb+srv://namastedev:TGmSfquq9Qt89HoG@namstenode.9ido0mx.mongodb.net/portfolio?retryWrites=true&w=majority&appName=NamsteNode");
 var conSchema = new mongoose.Schema({
   name: {
     type: String,
